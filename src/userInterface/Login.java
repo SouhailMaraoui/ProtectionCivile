@@ -251,7 +251,7 @@ public class Login
 		{
 			Class.forName("org.sqlite.JDBC");
 			// Class.forName("com.mysql.jdbc.Driver");
-			connection = DriverManager.getConnection("jdbc:sqlite:SQLite.db");
+			connection = DriverManager.getConnection("jdbc:sqlite:db.db");
 			// connection=DriverManager.getConnection(url, user, password);
 			connection.setAutoCommit(false);
 		} catch (Exception e)

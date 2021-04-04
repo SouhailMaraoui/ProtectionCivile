@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="backup" uuid="99659864-8a3f-4154-95a2-0758d34137b8">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\MyCloud\Users\Souhail\D\Devs\Java\ProtectionCivile\backup.db</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="db" uuid="f6e26c75-861c-438c-adc8-f81d99f7964f">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\MyCloud\Users\Souhail\D\Devs\Java\ProtectionCivile\db.db</jdbc-url>
+    </data-source>
+  </component>
+</project>

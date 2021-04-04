@@ -26,14 +26,14 @@ public class Incident
 	/**
 	 * Méthode.<BR>
 	 * Permet d'inserer un incident composé de son identifiant par le biais de le
-	 * methode @see {@link Incident#IncidentCount()} , sa date, sa priorité, son
+	 * methode @see {@link Incident#IncidentCount()} , sa date, sa priorite, son
 	 * emplacement, la rue, la commune, l'identifiant de la ville, la latitude et la
 	 * longitude, l'identifiant du type d'indident et du sous type d'incident et
 	 * l'etat ( initialement en attente )
 	 *
 	 * @param date               la date de l'incident.
 	 *
-	 * @param priorité           priorité de l'incident.
+	 * @param priorite           priorite de l'incident.
 	 *
 	 * @param emplacement        l'emplacement de l'incident.
 	 *
@@ -53,14 +53,14 @@ public class Incident
 	 *
 	 * @throws SQLException Si on n’arrive pas à insérer les données.
 	 **/
-	public static void insert(String date, int priorité, String emplacement, String rue, String commune, int IdVille,
+	public static void insert(String date, int priorite, String emplacement, String rue, String commune, int IdVille,
 			double latitude, double longitude, int IdTypeIncident, int IdSousTypeIncident) throws SQLException
 	{
 		Connection connection = Login.connection;
 
 		int IdIncident = IncidentCount() + 1;
 		String etat = "En Attente";
-		String query = "INSERT INTO incident Values (" + IdIncident + ",'" + date + "','null'," + priorité + ",\""
+		String query = "INSERT INTO incident Values (" + IdIncident + ",'" + date + "','null'," + priorite + ",\""
 				+ emplacement + "\",\"" + rue + "\",\"" + commune + "\"," + IdVille + "," + latitude + "," + longitude
 				+ "," + IdTypeIncident + "," + IdSousTypeIncident + ",'" + etat + "');";
 		Statement statement;
